@@ -17,11 +17,32 @@ names(mynames) <- c("a","b","c","d")
 # Creating lists
 mylist <- list(title = "Research List", coats = c("black","tabby","ginger"), weights = c(1.9,2.3,4.1))
 
-# rbind & cbind - join rows or columns
+# rbind & cbind & omit() - join rows or columns, exclude rows
 rbind(cats, cats)
 
 # matrix examples
 mymatrix <- matrix(0,ncol = 4, nrow = 6)
 v <- c(1,2,3,4,5,6)
 result <- mymatrix * v
+
+# Flow control
+# For loop
+# If
+val <- 3
+
+compare_to_nine <- function(val) {
+  if (val > 9) {
+    print("More!")
+  } else if (val == 9) {
+    print("Equal!")
+  } else if (val < 9) 
+    print("Less!")
+  } else {
+    print("Unknown evaluation. Something went wrong!")
+  }
+}
+
+
+
+
 
